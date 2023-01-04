@@ -1,5 +1,5 @@
 import './index.css'
-import ListOfUsers from './components/ListOfUsers/ListOfUsers'
+import ListOfUsers from './components/ListOfUsers/index'
 
 import { getUserData } from './resources/mockData/usersList'
 import reportWebVitals from './reportWebVitals'

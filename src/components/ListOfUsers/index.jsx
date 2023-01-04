@@ -1,9 +1,9 @@
-import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName } from './styles'
+import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName, Title } from './styles'
 
 const ListOfUsers = ({ UserData }) => {
   return (
     <Frame>
-      <h1>List Test</h1>
+      <Title>List Test</Title>
       <UnorderedList>
         {UserData.map((user, index) =>
           <ListItem key={index}>

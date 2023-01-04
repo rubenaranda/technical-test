@@ -5,17 +5,23 @@ export const Frame = styled.div`
 ${withTheme('font-family', 'fonts.body')}
 `
 
+export const Title = styled.h1`
+text-align: center
+`
+
 export const UnorderedList = styled.ul`
 display: grid;
 `
 
 export const ListItem = styled.li`
 display: inline-flex;
+underline-align: center; 
 `
 
 export const DataItem = styled.div`
 display: inline-block;
 ${withTheme('margin-left', 'sizes.medium')}
+border-bottom:1px solid black;
 text-align: center;
 `
 

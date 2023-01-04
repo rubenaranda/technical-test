@@ -5,7 +5,7 @@ const ListOfUsers = ({ UserData }) => {
   const [listIndex, setIndex] = useState(0)
   const [users, setUsers] = useState([])
 
-  const tuPutaMadreFunction = () => {
+  const addUser = () => {
     if (listIndex < UserData.length) {
       setIndex(listIndex + 1)
       setUsers([...users, UserData[listIndex]])
@@ -31,7 +31,7 @@ const ListOfUsers = ({ UserData }) => {
           </UnorderedList>
         )
       })}
-      <button onClick={tuPutaMadreFunction}>
+      <button onClick={addUser}>
         next
       </button>
     </Frame>

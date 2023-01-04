@@ -11,6 +11,9 @@ display: grid;
 
 export const ListItem = styled.li`
 display: inline-flex;
+border-bottom:1px solid black;
+text-align: center;
+opacity:1;
 `
 
 export const DataItem = styled.div`

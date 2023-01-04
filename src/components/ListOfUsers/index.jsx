@@ -18,19 +18,19 @@ const ListOfUsers = ({ UserData }) => {
   return (
     <Frame>
       <h1>List Test</h1>
-      {users.map((user, index) => {
-        return (
-          <UnorderedList key={index}>
-            <ListItem>
+      <UnorderedList>
+        {users.map((user, index) => {
+          return (
+            <ListItem key={index}>
               <ImageItem src={user.picture.medium} />
               <DataItem>
                 <ItemName>{user.name.first} {user.name.last}</ItemName>
                 <p>{user.email}</p>
               </DataItem>
             </ListItem>
-          </UnorderedList>
-        )
-      })}
+          )
+        })}
+      </UnorderedList>
       <button onClick={addUser}>
         next
       </button>

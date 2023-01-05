@@ -5,12 +5,17 @@ export const Frame = styled.div`
 ${withTheme('font-family', 'fonts.body')}
 `
 
-export const Title = styled.h1`
-text-align: center
+export const Logo = styled.img`
+width: 35rem;
+height: 4.5rem;
+padding-left: 22rem;
+padding-top: 5rem;
+padding-bottom: 5rem;
 `
 
 export const UnorderedList = styled.ul`
 display: grid;
+justify-content: center;
 `
 
 export const ListItem = styled.li`

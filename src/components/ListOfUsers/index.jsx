@@ -1,9 +1,11 @@
-import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName, Title } from './styles'
+
+import TravelportLogo from '../../resources/images/Travelport-Logo.png'
+import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName, Logo } from './styles'
 
 const ListOfUsers = ({ UserData }) => {
   return (
     <Frame>
-      <Title>List Test</Title>
+      <Logo src={TravelportLogo} alt='travelport-logo' />
       <UnorderedList>
         {UserData.map((user, index) =>
           <ListItem key={index}>

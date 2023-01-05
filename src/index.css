@@ -1,11 +1,3 @@
 body {
   background-color: #f7e4cb;
 }
-
-ul {
-overflow: hidden;
-background-image: url('D:\Clase\technical-test\src\resources\images\Travelport-Logo.png');
-background-repeat: no-repeat;
-background-size: 30%;
-background-position: center;
-}

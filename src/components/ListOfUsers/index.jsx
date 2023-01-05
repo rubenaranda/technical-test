@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName } from './styles'
+
+import TravelportLogo from '../../resources/images/Travelport-Logo.png'
+import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName, Logo, AddButton } from './styles'
 
 const ListOfUsers = ({ UserData }) => {
   const [listIndex, setIndex] = useState(0)
@@ -17,7 +19,7 @@ const ListOfUsers = ({ UserData }) => {
 
   return (
     <Frame>
-      <h1>List Test</h1>
+      <Logo src={TravelportLogo} alt='travelport-logo' />
       <UnorderedList>
         {users.map((user, index) => {
           return (
@@ -31,9 +33,9 @@ const ListOfUsers = ({ UserData }) => {
           )
         })}
       </UnorderedList>
-      <button onClick={addUser}>
-        next
-      </button>
+      <AddButton onClick={addUser}>
+        Add User
+      </AddButton>
     </Frame>
   )
 }

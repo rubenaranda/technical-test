@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import GetApiData from '../GetApiData'
-import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName } from './styles'
+
+import TravelportLogo from '../../resources/images/Travelport-Logo.png'
+import { Frame, UnorderedList, ListItem, DataItem, ImageItem, ItemName, AddButton, Logo } from './styles'
 
 const baseURL = 'https://randomuser.me/api/?results=5'
 
@@ -20,7 +22,7 @@ const ListOfUsers = () => {
   }
   return (
     <Frame>
-      <h1>List Test</h1>
+      <Logo src={TravelportLogo} alt='travelport-logo' />
       <UnorderedList>
         {users.map((user, index) =>
           <ListItem key={index}>
@@ -32,9 +34,9 @@ const ListOfUsers = () => {
           </ListItem>
         )}
       </UnorderedList>
-      <button onClick={addUser}>
-        next
-      </button>
+      <AddButton onClick={addUser}>
+        Add User
+      </AddButton>
     </Frame>
   )
 }

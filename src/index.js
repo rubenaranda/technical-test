@@ -1,5 +1,5 @@
 import './index.css'
-import ListOfUsers from './components/ListOfUsers/index'
+import UsersList from './components/UsersList/index'
 
 import { getUserData } from './resources/mockData/usersList'
 import reportWebVitals from './reportWebVitals'
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={testTheme}>
-      <ListOfUsers UserData={getUserData()} />
+      <UsersList UserData={getUserData()} />
     </ThemeProvider>
   </React.StrictMode>
 )

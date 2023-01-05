@@ -1,7 +1,6 @@
 export const testTheme = {
   fonts: {
-    body: 'var(--ff-primary-body)',
-    heading: 'var(--ff-primary-headline)'
+    body: 'Arial, Helvetica, sans-serif'
   },
   sizes: {
     small: '0.5rem',

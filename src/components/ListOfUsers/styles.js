@@ -26,6 +26,7 @@ export const DataItem = styled.div`
 display: inline-block;
 ${withTheme('margin-left', 'sizes.medium')}
 text-align: center;
+border-bottom:1px solid black;
 `
 
 export const ImageItem = styled.img`

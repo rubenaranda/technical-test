@@ -24,7 +24,7 @@ const ListOfUsers = ({ UserData }) => {
         {users.map((user, index) => {
           return (
             <ListItem key={index} data-testid='usersList-li' className='usersList-li'>
-              <ImageItem src={user.picture.medium} data-testid='usersList-userImage' className='usersList-userImage' />
+              <ImageItem src={user.picture.medium} alt='profilePicture' data-testid='usersList-userImage' className='usersList-userImage' />
               <DataItem>
                 <ItemName data-testid='usersList-name' className='usersList-name'>{user.name.first} {user.name.last}</ItemName>
                 <p data-testid='usersList-email' className='usersList-email'>{user.email}</p>
